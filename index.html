@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Page Title</title>
+     <!-- <link rel="stylesheet" href="styles.css"> -->
+     <script>
+          function appiumSelect() {
+               document.querySelector('select2').innerHTML = alert("Appium is selected");
+          }
+          document.addEventListener("mouseover", function () {
+               document.title = "Page Title";
+          });
+
+          document.addEventListener("mouseout", function () {
+               document.title = "Hello there! I'm Parvin Shakiba";
+          });
+
+     </script>
+</head>
+
+<body>
+     <div class="content">
+          <h1 style="color: blue;">I'm going to be a great QA Automation Engineer</h1>
+          <input type="radio" id="radio1" name="radiogroup" checked>
+          <label for="radio1">Selenium</label>
+          <input type="radio" id="radio2" name="radiogroup" onclick="appiumSelect()">
+          <label for="radio2">Appium</label>
+          <br><br>
+
+          <label for="options">Select Element:</label>
+          <select id="options">
+               <option value="opt1" id="select1">Option 1</option>
+               <option value="opt2" name="select2">Option 2</option>
+               <option value="opt3">Option 3</option>
+          </select>
+     </div>
+</body>
+
+</html>
